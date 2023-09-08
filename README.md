@@ -1,4 +1,4 @@
-# AI-accerator-based-on-systolic-array
+# AI-accelerator-based-on-systolic-array
 2023集创赛国二，紫光同创杯。八月份的时候花了两个星期爆肝出来的加速器（当然之前读了几个月文献）。基于脉动阵列写的一个简单的卷积层加速器。纯Verilog。支持yolov3-tiny的第一层卷积层计算。可根据FPGA端DSP资源灵活调整脉动阵列的结构以实现不同的计算效率。  
 
 # 代码结构
