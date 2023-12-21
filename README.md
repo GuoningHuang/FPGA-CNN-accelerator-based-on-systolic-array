@@ -4,7 +4,7 @@
 # 性能指标
 运行频率跟1920×1080p 60hz的HDMI输入接口频率一致：148.5MHz,因为HDMI来一行数据加速器就可以计算一行，不影响HDMI数据的输入。
 # 代码结构
-sources目录下是ip核和代码，sim目录下是仿真文件，coe目录下是rom例化需要的coe文件。
+sources目录下是ip核和代码，sim目录下是仿真文件，coe目录下是rom例化需要的coe文件。ip核我是直接导出的vivado文件，我在里面截了ip核具体怎么设置的图，方便大家自行例化ip核。
 # 加速器设计思路
 ![image](https://github.com/odin2985/AI-accerator-based-on-systolic/assets/75004653/10ae2238-bd6b-4936-9ee7-ad46464fcef3)  
 这个AI加速器是我们作品中的一个模块，输入的HDMI数据会输入到AI加速器单元，计算完量化yolov3tiny模型的第一层，包含一次卷积+LeakReLU+max pooling操作，随后将结果经过PCIE传回PC主机，PC主机利用GPU和PCIE采集的FPGA计算结果，完成剩下的模型运算步骤，实现目标检测。
