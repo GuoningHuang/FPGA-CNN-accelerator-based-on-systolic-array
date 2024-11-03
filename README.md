@@ -1,5 +1,5 @@
 # AI-accelerator-based-on-systolic-array
-2023集创赛国二，紫光同创杯。八月份的时候花了两个星期爆肝出来的加速器（当然之前读了几个月文献）。基于脉动阵列写的一个简单的卷积层加速器。纯Verilog。支持yolov3-tiny的第一层卷积层计算。  
+2023集创赛国二。八月份的时候花了两个星期爆肝出来的加速器（当然之前读了几个月文献）。基于脉动阵列写的一个简单的卷积层加速器。纯Verilog。支持yolov3-tiny的第一层卷积层计算。  
 我们是先在vivado上设计和仿真的加速器，然后再移植到紫光的板子上，开源的是vivado的工程。工程用的芯片型号是：Zynq UltraScale+ MPSoCs，xczu3eg-ubva530-2LV-e (active)。
 # 加速器在我们作品整个系统的作用
 ![image](https://github.com/odin2985/AI-accerator-based-on-systolic/assets/75004653/10ae2238-bd6b-4936-9ee7-ad46464fcef3)  
